@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>RoboSoul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='font-awesome/css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap-slider.css')}}" />
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+
+    {% block navbar %}
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><b>Controlador</b>RoboSoul</a></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movimientos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Creador de movimientos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Instructivo</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Nuevo movimiento</a>
+                <a class="dropdown-item" href="#">Movimiento simple</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    {% endblock %}
+
+    <div id="content">{% block content %}{% endblock %}</div>
+
+    <script src="{{url_for('static', filename='jquery/jquery-3.2.1.min.js')}}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{url_for('static', filename='bootstrap/js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap/js/bootstrap-slider.js')}}"></script>
+    {% block javascript_footer %}
+    {% endblock %}
+
+    {% block footer %}
+    <footer class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 1.0.0
+        </div>
+        <strong>Taller de Proyecto 2</strong> Robo Soul
+      </div>
+      <!-- /.container -->
+    </footer>
+    {% endblock %}
+</body>
+</html>
