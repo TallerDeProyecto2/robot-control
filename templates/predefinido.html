@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron text-center">
+  <h1>Movimientos predefinidos de prueba</h1>
+  <p>Seleccione el movimiento deseado...</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="{{url_for('static', filename='roboSoul.jpg')}}" height="200" width="200">
+        <div class="caption">
+          <h3>Descripción del movimiento</h3>
+          <p>En que consiste el movimientos, como debe encontrarse el robot...</p>
+          <p><a href="#" class="btn btn-success" role="button"><i class="fa fa-play"></i> Ejecutar</a> <a href="#" class="btn btn-danger" role="button"><i class="fa fa-stop"></i> Frenar</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="{{url_for('static', filename='roboSoul.jpg')}}" height="200" width="200">
+        <div class="caption">
+          <h3>Descripción del movimiento</h3>
+          <p>En que consiste el movimientos, como debe encontrarse el robot...</p>
+          <p><a href="#" class="btn btn-success" role="button"><i class="fa fa-play"></i> Ejecutar</a> <a href="#" class="btn btn-danger" role="button"><i class="fa fa-stop"></i> Frenar</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="{{url_for('static', filename='roboSoul.jpg')}}" height="200" width="200">
+        <div class="caption">
+          <h3>Descripción del movimiento</h3>
+          <p>En que consiste el movimientos, como debe encontrarse el robot...</p>
+          <p><a href="#" class="btn btn-success" role="button"><i class="fa fa-play"></i> Ejecutar</a> <a href="#" class="btn btn-danger" role="button"><i class="fa fa-stop"></i> Frenar</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+{% block javascript_footer %}
+{% endblock %}
