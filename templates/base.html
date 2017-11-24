@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='font-awesome/css/font-awesome.min.css')}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap-slider.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/AdminLTE.min.css')}}" />
 
     {% block head %}
     {% endblock %}
@@ -18,7 +19,7 @@
 
     {% block navbar %}
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"><b>Controlador</b>RoboSoul</a></a>
+        <a class="navbar-brand" href="/"><b>Controlador</b>RoboSoul</a></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,10 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="/">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Movimientos</a>
+              <a class="nav-link" href="/movimientos">Movimientos</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,6 +55,7 @@
     <script src="{{url_for('static', filename='bootstrap/js/popper.min.js')}}"></script>
     <script src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{url_for('static', filename='bootstrap/js/bootstrap-slider.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap/js/adminlte.min.js')}}"></script>
     {% block javascript_footer %}
     {% endblock %}
 
