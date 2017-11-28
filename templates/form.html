@@ -6,126 +6,130 @@
   <p>Descripcion de lo que podemos hacer...</p>
 </div>
 <div class="container">
-  <form>
-  <div class="box box-info">
-    <div class="box-body">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Nombre del movimiento:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese un nombre que identifique al movimiento">
-      </div>
-      <div class="form-group">
-        <label>Ingrese junto al servo el ángulo de movimiento:</label>
-        <br>
-        <div class="row">
-          <div class="col-lg-6">
-              <div class="input-group">
-                <span class="input-group-addon">1</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">2</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">3</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">4</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">5</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">6</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">7</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">8</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
+  <form action="/movimientosComplejos" method="POST">
+    <div class="box box-info">
+      <div class="box-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombre del movimiento:</label>
+          <input type="text" class="form-control" required="true" id="nombre" name="nombre" placeholder="Ingrese un nombre que identifique al movimiento">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Descripción:</label>
+          <input type="text" class="form-control" required="true" id="descripcion" name="descripcion" placeholder="Ingrese una descripción del movimiento">
+        </div>
+        <div class="form-group">
+          <label>Ingrese junto al servo el ángulo de movimiento:</label>
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                  <span class="input-group-addon">1</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo1" name="servo1">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">2</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo2" name="servo2">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">3</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo3" name="servo3">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">4</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo4" name="servo4">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">5</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo5" name="servo5">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">6</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo6" name="servo6">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">7</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo7" name="servo7">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">8</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo8" name="servo8">
+                  <span class="input-group-addon">°</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                  <span class="input-group-addon">9</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo9" name="servo9">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">10</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo10" name="servo10">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">11</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo11" name="servo11">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">12</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo12" name="servo12">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">13</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo13" name="servo13">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">14</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo14" name="servo14">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">15</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo15" name="servo15">
+                  <span class="input-group-addon">°</span>
+                </div>
+              <br>
+                <div class="input-group">
+                  <span class="input-group-addon">16</span>
+                  <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados" id="servo16" name="servo16">
+                  <span class="input-group-addon">°</span>
+                </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-              <div class="input-group">
-                <span class="input-group-addon">9</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">10</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">11</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">12</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">13</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">14</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">15</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-            <br>
-              <div class="input-group">
-                <span class="input-group-addon">16</span>
-                <input type="number" min="0" max="180" class="form-control" aria-label="Movimiento en grados">
-                <span class="input-group-addon">°</span>
-              </div>
-          </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> Cancelar</button>
+          <button type="submit" class="btn btn-success pull-right"><i class="fa fa-floppy-o"></i> Guardar</button>
         </div>
       </div>
       <!-- /.box-body -->
-      <div class="box-footer">
-        <button type="submit" class="btn btn-danger"><i class="fa fa-times"></i> Cancelar</button>
-        <button type="submit" class="btn btn-success pull-right"><i class="fa fa-floppy-o"></i> Guardar</button>
-      </div>
     </div>
-    <!-- /.box-body -->
-  </div>
-  <!-- /.box -->
+    <!-- /.box -->
   </form>
 </div>
 {% endblock %}
